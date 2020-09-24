@@ -1,4 +1,6 @@
-﻿using System;
+﻿//a number raised to the power of 2
+
+using System;
 
 namespace ExVariablesExpressionsInputData
 {
@@ -7,14 +9,11 @@ namespace ExVariablesExpressionsInputData
         static void Main(string[] args)
         {
             string inputDataA = Console.ReadLine();
-            int a = Convert.ToInt32(inputDataA);
+            double a = Convert.ToDouble (inputDataA);
 
-            string inputDataB = Console.ReadLine();
-            int b = Convert.ToInt32(inputDataB);
-
-            Console.WriteLine(a+b);
+            Console.WriteLine(Math.Pow(a, 2));
             Console.Read();
-       
+ 
         }
     }
 }
