@@ -1,4 +1,4 @@
-﻿//a number raised to the power of 2
+﻿// check if a number is positive or negative
 
 using System;
 
@@ -9,11 +9,23 @@ namespace ExVariablesExpressionsInputData
         static void Main(string[] args)
         {
             string inputDataA = Console.ReadLine();
-            double a = Convert.ToDouble (inputDataA);
+            int a = Convert.ToInt32(inputDataA);
 
-            Console.WriteLine(Math.Pow(a, 2));
-            Console.Read();
- 
+            if (a == 0)
+            {
+                Console.WriteLine("0");
+                Console.Read();
+            }
+            else if (a > 0)
+            {
+                Console.WriteLine("True");
+                Console.Read();
+            }
+            else if (a < 0)
+            {
+                Console.WriteLine("False");
+                Console.Read();
+            }
         }
     }
 }
